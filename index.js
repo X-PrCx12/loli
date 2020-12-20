@@ -862,7 +862,7 @@ case 'filmanime':
 
             break
     case 'xi':
-tobz.reply(from, 'Siapp!!', id)
+client.reply(from, 'Siapp!!', id)
 break
    }
 })
