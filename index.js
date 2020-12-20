@@ -822,5 +822,44 @@ case 'filmanime':
             break       
        default:
            break
+    case 'sider':
+
+            if (!isGroupMsg) return client.reply(from, menuPriv, id)
+
+            try {
+
+                if (quotedMsg) {
+
+                    hurtz.getMessageReaders(message.quotedMsgObj.id).then(a => {
+
+                        let siderne = `Ciee Ngeread... ${a.length} NIH YG READ : \n`
+
+                        for (let i = 0; i < a.length; i++){
+
+                            const nomer = a[i].id.replace('@c.us','')
+
+                            siderne += `➣ @${nomer}\n`
+
+                        }
+
+                        client.sendTextWithMentions(from, siderne, id)
+
+                    })
+
+                } else {
+
+                    client.reply(from, `*Hanya Tag Ke Bot Ya?!*`, id)
+
+                }
+
+            } catch(e) {
+
+                ERRLOG(e)
+
+                client.reply(from, `*Pastikan Tag Ke Bot!*`, id)
+
+            }
+
+            break
    }
 })
