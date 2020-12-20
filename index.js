@@ -1,11 +1,11 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY ARIS187 ID
+* SCRIPT BY Loli
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* ARIS187 ID
+* GBLK LU ANJG
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const qrcode = require("qrcode-terminal")
@@ -861,5 +861,8 @@ case 'filmanime':
             }
 
             break
+    case 'xi':
+tobz.reply(from, 'Siapp!!', id)
+break
    }
 })
